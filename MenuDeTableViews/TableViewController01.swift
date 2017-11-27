@@ -18,7 +18,7 @@
 //  Pour obtenir l’autorisation de reproduire ou d’utiliser, en tout ou en partie,
 //  le présent projet, veuillez communiquer avec:
 //
-//  Alain Boudreault, aboudrea@cstj.qc.ca
+//  Alain Boudreault, aboudrea@cstj.qc.ca, alain.boudreault@me.com
 //
 //  ============================================================================================
 import UIKit
