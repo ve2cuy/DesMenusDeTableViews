@@ -36,7 +36,8 @@
  Style your TableView the way you want -> including static cells.
  
  */
-
+/*
+ 
 import UIKit
 
 class ViewController: UIViewController {
@@ -54,3 +55,4 @@ class ViewController: UIViewController {
 
 }
 
+*/

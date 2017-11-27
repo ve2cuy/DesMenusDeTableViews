@@ -28,18 +28,51 @@ import Foundation
 enum TypeDonnées:Int {
     case options
     case sélections
-}
+} // TypeDonnées
+
+enum Ingrédients:Int {
+    case protéines
+    case fruitsDeMer
+    case fibres
+} // Ingrédients
 
 struct Globale {
+    static let menuDesIngrédients = [
+        "Protéine",
+        "Fruit de mer",
+        "Fibre",
+        "Amuse gueule"
+    
+    ]
+    
     static var donnéesDesTableViews = [
+
+        // tableview 01 - Les protéines
         [
-            // tableview 01
             // Les options à afficher dans le tableView
-            ["12", "23", "56", "67", "99"],
+            ["Poulet", "Porc", "Boeuf", "Canard", "Écureil"],
             // Les choix de l'utilisateur
             Array<IndexPath>()
-        ]
+        ], // tableview 01 - Les protéines
+
+        // tableview 02 - Les fruits de mer
+        [
+            // Les options à afficher dans le tableView
+            ["Ballon", "Vague", "Sel", "Sable", "Déchet"],
+            // Les choix de l'utilisateur
+            Array<IndexPath>()
+        ], // tableview 02 - Les fruits de mer
+
+        // tableview 03 - Les produits laitier
+        [
+            // Les options à afficher dans le tableView
+            ["Lait", "Beurre", "Fromage"],
+            // Les choix de l'utilisateur
+            Array<IndexPath>()
+        ] // tableview 02 - Les fruits de mer
+
     ]
+    
     //static var choixTableView01 =
     //static var choixSélectionnésTableView01 = Array<IndexPath>()
 }
