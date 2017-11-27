@@ -12,6 +12,8 @@
 		B5F281331FCC8E9B00A21039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F281311FCC8E9B00A21039 /* Main.storyboard */; };
 		B5F281351FCC8E9B00A21039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F281341FCC8E9B00A21039 /* Assets.xcassets */; };
 		B5F281381FCC8E9B00A21039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F281361FCC8E9B00A21039 /* LaunchScreen.storyboard */; };
+		B5F281401FCC95D900A21039 /* TableViewController01.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2813F1FCC95D900A21039 /* TableViewController01.swift */; };
+		B5F281421FCCA2CE00A21039 /* Globales.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F281411FCCA2CE00A21039 /* Globales.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		B5F281341FCC8E9B00A21039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5F281371FCC8E9B00A21039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5F281391FCC8E9B00A21039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5F2813F1FCC95D900A21039 /* TableViewController01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController01.swift; sourceTree = "<group>"; };
+		B5F281411FCCA2CE00A21039 /* Globales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globales.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				B5F281341FCC8E9B00A21039 /* Assets.xcassets */,
 				B5F281361FCC8E9B00A21039 /* LaunchScreen.storyboard */,
 				B5F281391FCC8E9B00A21039 /* Info.plist */,
+				B5F2813F1FCC95D900A21039 /* TableViewController01.swift */,
+				B5F281411FCCA2CE00A21039 /* Globales.swift */,
 			);
 			path = MenuDeTableViews;
 			sourceTree = "<group>";
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F281401FCC95D900A21039 /* TableViewController01.swift in Sources */,
 				B5F281301FCC8E9B00A21039 /* ViewController.swift in Sources */,
+				B5F281421FCCA2CE00A21039 /* Globales.swift in Sources */,
 				B5F2812E1FCC8E9B00A21039 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
