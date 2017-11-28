@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5108B6D1FCD950B000A3DC3 /* CelluleIngrédient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5108B6C1FCD950B000A3DC3 /* CelluleIngrédient.swift */; };
 		B5F2812E1FCC8E9B00A21039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2812D1FCC8E9B00A21039 /* AppDelegate.swift */; };
 		B5F281301FCC8E9B00A21039 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2812F1FCC8E9B00A21039 /* ViewController.swift */; };
 		B5F281331FCC8E9B00A21039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F281311FCC8E9B00A21039 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5108B6C1FCD950B000A3DC3 /* CelluleIngrédient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CelluleIngrédient.swift"; sourceTree = "<group>"; };
 		B5F2812A1FCC8E9B00A21039 /* MenuDeTableViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuDeTableViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F2812D1FCC8E9B00A21039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5F2812F1FCC8E9B00A21039 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				B5F2813F1FCC95D900A21039 /* IngrédientsViewController.swift */,
 				B5F281411FCCA2CE00A21039 /* Globales.swift */,
 				B5F281431FCCB27900A21039 /* Menu.swift */,
+				B5108B6C1FCD950B000A3DC3 /* CelluleIngrédient.swift */,
 			);
 			path = MenuDeTableViews;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				B5F281421FCCA2CE00A21039 /* Globales.swift in Sources */,
 				B5F2812E1FCC8E9B00A21039 /* AppDelegate.swift in Sources */,
 				B5F281441FCCB27900A21039 /* Menu.swift in Sources */,
+				B5108B6D1FCD950B000A3DC3 /* CelluleIngrédient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NFZJ42XSFR;
 				INFOPLIST_FILE = MenuDeTableViews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ve2cuy.MenuDeTableViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NFZJ42XSFR;
 				INFOPLIST_FILE = MenuDeTableViews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ve2cuy.MenuDeTableViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";

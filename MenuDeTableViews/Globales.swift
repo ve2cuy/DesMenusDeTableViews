@@ -38,10 +38,10 @@ enum Ingrédients:Int {
 
 struct Globale {
     static let menuDesIngrédients = [
-        "Protéine",
-        "Fruit de mer",
-        "Fibre",
-        "Amuse gueule"
+        "Protéines",
+        "Fruits de mer",
+        "Produits laitiers",
+        "Amuses-Bouches"
     
     ]
     
@@ -69,11 +69,16 @@ struct Globale {
             ["Lait", "Beurre", "Fromage"],
             // Les choix de l'utilisateur
             Array<IndexPath>()
-        ] // tableview 02 - Les fruits de mer
+        ], // tableview 03 - Les produits laitier
 
+        // tableview 04 - Les 'Amuses-Bouches'
+        [
+            // Les options à afficher dans le tableView
+            ["Chips", "Pretzels", "Olives"],
+            // Les choix de l'utilisateur
+            Array<IndexPath>()
+        ] // tableview 04
+        
     ]
-    
-    //static var choixTableView01 =
-    //static var choixSélectionnésTableView01 = Array<IndexPath>()
 }
 

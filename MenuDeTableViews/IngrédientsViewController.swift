@@ -50,7 +50,7 @@ class IngrédientsViewController: UITableViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         #if DEBUG
-            print(tableView.indexPathsForSelectedRows!)
+            print(tableView.indexPathsForSelectedRows)
         #endif
         Globale.donnéesDesTableViews[numéroDuTableView][TypeDonnées.sélections.rawValue] = tableView.indexPathsForSelectedRows ?? []
     } // viewWillDisappear
