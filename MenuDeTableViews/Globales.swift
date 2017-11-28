@@ -26,8 +26,13 @@
 import Foundation
 
 enum TypeDonnées:Int {
-    case options
+    case ingrédients
     case sélections
+    
+    var valeur: Int {
+        return self.rawValue
+    }
+    
 } // TypeDonnées
 
 enum Ingrédients:Int {

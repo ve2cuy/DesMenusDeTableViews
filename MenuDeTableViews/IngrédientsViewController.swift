@@ -28,8 +28,8 @@ class IngrédientsViewController: UITableViewController {
 
     public var numéroDuTableView:Int!
     
-    lazy var options = Globale.donnéesDesTableViews[numéroDuTableView][TypeDonnées.options.rawValue] as! Array<String>
-    lazy var sélections = Globale.donnéesDesTableViews[numéroDuTableView][TypeDonnées.sélections.rawValue] as! Array<IndexPath>
+    lazy var ingrédients = Globale.donnéesDesTableViews[numéroDuTableView][TypeDonnées.ingrédients.valeur] as! Array<String>
+    lazy var sélections = Globale.donnéesDesTableViews[numéroDuTableView][TypeDonnées.sélections.valeur] as! Array<IndexPath>
     
     // **********************************************************
     override func viewDidLoad() {
@@ -50,16 +50,16 @@ class IngrédientsViewController: UITableViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         #if DEBUG
-            print(tableView.indexPathsForSelectedRows)
+            print(tableView.indexPathsForSelectedRows as Any)
         #endif
-        Globale.donnéesDesTableViews[numéroDuTableView][TypeDonnées.sélections.rawValue] = tableView.indexPathsForSelectedRows ?? []
+        Globale.donnéesDesTableViews[numéroDuTableView][TypeDonnées.sélections.valeur] = tableView.indexPathsForSelectedRows ?? []
     } // viewWillDisappear
     
  
     // MARK: - Table view data source
     // **********************************************************
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return options.count
+        return ingrédients.count
     } // numberOfRowsInSection
 
     // **********************************************************
@@ -67,7 +67,7 @@ class IngrédientsViewController: UITableViewController {
         let cell = UITableViewCell()
         cell.accessoryType = cell.isSelected ? .checkmark : .none
         cell.selectionStyle = .none // Pour ne pas afficher la cellule en mode 'selected'
-        cell.textLabel?.text = options[indexPath.row]
+        cell.textLabel?.text = ingrédients[indexPath.row]
         return cell
     } // cellForRowAt
  
