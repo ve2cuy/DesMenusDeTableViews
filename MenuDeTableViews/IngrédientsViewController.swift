@@ -37,7 +37,7 @@ class IngrédientsViewController: UITableViewController {
     } // viewDidLoad
     
     // **********************************************************
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         // Réafficher les dernières sélections de l'utilisateur
         for index in sélections {
             tableView.selectRow(at: index, animated: true, scrollPosition: .none)
