@@ -22,6 +22,7 @@
 //
 //  ============================================================================================
 import UIKit
+import os.log
 
 // **********************************************************
 class IngrédientsViewController: UITableViewController {
@@ -34,6 +35,8 @@ class IngrédientsViewController: UITableViewController {
     // **********************************************************
     override func viewDidLoad() {
         super.viewDidLoad()
+        os_log("IngrédientsViewController-ViewDidLoad", log: AppDelegate.appDelegate_log, type: .info)
+
     } // viewDidLoad
     
     // **********************************************************

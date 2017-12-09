@@ -24,12 +24,21 @@
 //  ============================================================================================
 
 import UIKit
+import os.log
+// http://blog.safedk.com/technology/nslog-os_log-multiple-ios-versions/
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
+    //TODO: Faire fonctionner les logs
+    static let appDelegate_log = OSLog(subsystem: "ca.qc.cstj.tim-MenuDeTableViews", category: "APP")
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        NSLog("didFinishLaunchingWithOptions")
+        os_log("didFinishLaunchingWithOptions")
+        os_log("Cutting down trees to turn them into logs", log: AppDelegate.appDelegate_log, type: .info)
+        os_log("B-b-b-b-b-b-b-bomb!", log: AppDelegate.appDelegate_log, type: .error)
         return true
     } // didFinishLaunchingWithOptions
 } // AppDelegate
